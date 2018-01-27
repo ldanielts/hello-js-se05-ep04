@@ -20,5 +20,7 @@ const knex = require("./config.js").knex;
     nomejogador: 'Pascalino'
 }
 
+knex("jogador").update("numerojogador", 10).where("idjogador", 6).then(ret => console.log(ret));
+
  /* knex("jogador").insert(atacante, 'nomejogador').then(j => console.log(j));
   knex("jogador").insert(atacante2).then(j => console.log(j));*/
